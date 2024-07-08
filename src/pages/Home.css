@@ -211,3 +211,36 @@ width: 275px;
        width:90%;
        height: 2.5rem;
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #f0f0f0;
+    /* Background color */
+}
+
+.bubble {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #21005D;
+    animation: bubble 1.5s infinite;
+}
+
+@keyframes bubble {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+}
